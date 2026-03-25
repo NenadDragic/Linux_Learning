@@ -1,5 +1,45 @@
 # S
 
+## sha256sum – Beregn og verificer SHA-256 hash
+
+```bash
+sha256sum filnavn.txt
+```
+
+### sha256sum – Top 5 mest brugte options
+
+#### 1. Beregn hash på en fil
+
+```bash
+sha256sum filnavn.txt
+```
+
+#### 2. Tjek hash mod en liste (verify)
+
+```bash
+sha256sum -c kontrolfil.sha256
+```
+
+#### 3. Gem hash til fil
+
+```bash
+sha256sum filnavn.txt > filnavn.sha256
+```
+
+#### 4. Beregn hash på flere filer
+
+```bash
+sha256sum fil1.txt fil2.txt fil3.txt
+```
+
+#### 5. Vis kun hash uden filnavn
+
+```bash
+sha256sum filnavn.txt | awk '{print $1}'
+```
+
+---
+
 ## scp – Secure copy remotely
 
 ```bash

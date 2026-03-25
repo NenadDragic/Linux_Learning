@@ -38,6 +38,12 @@ grep -l "mønster" *.txt
 grep -v "mønster" fil.txt
 ```
 
+#### 6. Søg efter kørende proces via pipe
+
+```bash
+ps -ef | grep procesnavn
+```
+
 ---
 
 ## gawk – Search fields for lines that match a pattern

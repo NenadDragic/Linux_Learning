@@ -118,6 +118,12 @@ ps -u brugernavn
 ps -p PID
 ```
 
+#### 6. Vis alle processer i fuld format (bruges ofte med grep)
+
+```bash
+ps -ef
+```
+
 ---
 
 ## pwd – Print working directory
