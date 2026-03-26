@@ -197,3 +197,45 @@ rsync -av --dry-run kilde/ destination/
 ```bash
 rsync -av --partial kilde/ destination/
 ```
+
+---
+
+## raspi-config – Konfigurationsværktøj til Raspberry Pi
+
+```bash
+sudo raspi-config
+```
+
+### raspi-config – Top 5 mest brugte options
+
+#### 1. Åbn konfigurationsmenuen
+
+```bash
+sudo raspi-config
+```
+
+#### 2. Aktiver SSH via kommandolinje
+
+```bash
+sudo raspi-config nonint do_ssh 0
+```
+
+#### 3. Skift hostname via kommandolinje
+
+```bash
+sudo raspi-config nonint do_hostname nyt-hostname
+```
+
+#### 4. Udvid filsystemet til hele SD-kortet
+
+```bash
+sudo raspi-config nonint do_expand_rootfs
+```
+
+#### 5. Aktiver I2C-interface
+
+```bash
+sudo raspi-config nonint do_i2c 0
+```
+
+---

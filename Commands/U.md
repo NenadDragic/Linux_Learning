@@ -237,3 +237,85 @@ usermod -L brugernavn
 ```bash
 usermod -U brugernavn
 ```
+
+---
+
+## umount – Afmonter et filsystem
+
+```bash
+umount /mnt/disk
+```
+
+### umount – Top 5 mest brugte options
+
+#### 1. Afmonter bestemt monteringspunkt
+
+```bash
+umount /mnt/disk
+```
+
+#### 2. Afmonter bestemt enhed
+
+```bash
+umount /dev/sdb1
+```
+
+#### 3. Tving afmontering
+
+```bash
+umount -f /mnt/disk
+```
+
+#### 4. Afmonter dovent (vent til den ikke bruges)
+
+```bash
+umount -l /mnt/disk
+```
+
+#### 5. Afmonter alle filsystemer af bestemt type
+
+```bash
+umount -t tmpfs
+```
+
+---
+
+## uptime – Vis systemets oppetid og belastning
+
+```bash
+uptime
+```
+
+### uptime – Top 5 mest brugte options
+
+#### 1. Vis oppetid
+
+```bash
+uptime
+```
+
+#### 2. Vis oppetid i menneskevenligt format
+
+```bash
+uptime -p
+```
+
+#### 3. Vis tidspunkt for seneste opstart
+
+```bash
+uptime -s
+```
+
+#### 4. Vis load average i et script
+
+```bash
+uptime | awk '{print $NF}'
+```
+
+#### 5. Kombiner med watch til løbende overvågning
+
+```bash
+watch -n 5 uptime
+```
+
+---

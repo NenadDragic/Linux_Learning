@@ -157,3 +157,126 @@ mv -u fil.txt destination/
 ```bash
 mv fil1.txt fil2.txt destination/
 ```
+
+---
+
+## man – Vis manual for en kommando
+
+```bash
+man kommando
+```
+
+### man – Top 5 mest brugte options
+
+#### 1. Vis manualsiden for en kommando
+
+```bash
+man ls
+```
+
+#### 2. Søg i alle manualsider
+
+```bash
+man -k søgeord
+```
+
+#### 3. Vis bestemt sektion af manualen
+
+```bash
+man 5 passwd
+```
+
+#### 4. Vis alle tilgængelige manualsider for en kommando
+
+```bash
+man -a kommando
+```
+
+#### 5. Åbn manualside i HTML-browser
+
+```bash
+man -H kommando
+```
+
+---
+
+## mkfifo – Opret en navngivet pipe (FIFO)
+
+```bash
+mkfifo rørfil
+```
+
+### mkfifo – Top 5 mest brugte options
+
+#### 1. Opret en FIFO-fil
+
+```bash
+mkfifo min_pipe
+```
+
+#### 2. Opret med bestemt rettigheder
+
+```bash
+mkfifo -m 644 min_pipe
+```
+
+#### 3. Skriv data til pipe
+
+```bash
+echo "data" > min_pipe &
+```
+
+#### 4. Læs data fra pipe
+
+```bash
+cat min_pipe
+```
+
+#### 5. Brug FIFO til kommunikation mellem processer
+
+```bash
+mkfifo /tmp/pipe && cat /tmp/pipe | grep "mønster"
+```
+
+---
+
+## more – Vis filindhold én side ad gangen
+
+```bash
+more filnavn.txt
+```
+
+### more – Top 5 mest brugte options
+
+#### 1. Vis fil én side ad gangen
+
+```bash
+more filnavn.txt
+```
+
+#### 2. Start visning fra bestemt linje
+
+```bash
+more +42 filnavn.txt
+```
+
+#### 3. Sæt antal linjer per side
+
+```bash
+more -20 filnavn.txt
+```
+
+#### 4. Kombiner med pipe
+
+```bash
+ps aux | more
+```
+
+#### 5. Søg efter mønster (inde i more)
+
+```bash
+more filnavn.txt
+# Tryk / og skriv søgeord
+```
+
+---

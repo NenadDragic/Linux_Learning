@@ -198,3 +198,125 @@ lsof -i
 ```bash
 lsof /sti/til/fil
 ```
+
+---
+
+## lsblk – List blokenhedsoplysninger
+
+```bash
+lsblk
+```
+
+### lsblk – Top 5 mest brugte options
+
+#### 1. Vis alle blokenheder med filsystemtype
+
+```bash
+lsblk -f
+```
+
+#### 2. Vis i JSON-format
+
+```bash
+lsblk -J
+```
+
+#### 3. Vis størrelse i menneskevenligt format
+
+```bash
+lsblk -h
+```
+
+#### 4. Vis alle enheder inkl. tomme
+
+```bash
+lsblk -a
+```
+
+#### 5. Vis monteringspunkter og UUID
+
+```bash
+lsblk -o NAME,SIZE,FSTYPE,MOUNTPOINT,UUID
+```
+
+---
+
+## lsusb – List tilsluttede USB-enheder
+
+```bash
+lsusb
+```
+
+### lsusb – Top 5 mest brugte options
+
+#### 1. Vis detaljerede oplysninger om alle USB-enheder
+
+```bash
+lsusb -v
+```
+
+#### 2. Vis USB-træstruktur
+
+```bash
+lsusb -t
+```
+
+#### 3. Vis bestemt USB-bus
+
+```bash
+lsusb -s 001:
+```
+
+#### 4. Find enhed med bestemt vendor-ID
+
+```bash
+lsusb -d 0951:
+```
+
+#### 5. Vis kort oversigt over alle enheder
+
+```bash
+lsusb
+```
+
+---
+
+## lsof – Vis åbne filer og hvilke processer der bruger dem
+
+```bash
+lsof +D /media/admina/Dragic
+```
+
+### lsof – Top 5 mest brugte options
+
+#### 1. Vis alle processer der bruger en mappe (fx et monteret drev)
+
+```bash
+lsof +D /media/admina/Dragic
+```
+
+#### 2. Vis alle åbne filer for en bestemt bruger
+
+```bash
+lsof -u brugernavn
+```
+
+#### 3. Vis hvilken proces der bruger en bestemt port
+
+```bash
+lsof -i :8080
+```
+
+#### 4. Vis alle netværksforbindelser
+
+```bash
+lsof -i
+```
+
+#### 5. Vis åbne filer for en bestemt proces (PID)
+
+```bash
+lsof -p 1234
+```
+
+---

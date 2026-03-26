@@ -243,3 +243,125 @@ gpasswd -r gruppenavn
 ```bash
 gpasswd -R gruppenavn
 ```
+
+---
+
+## gh – GitHub CLI – administrer GitHub fra terminalen
+
+```bash
+gh auth login
+```
+
+### gh – Top 5 mest brugte options
+
+#### 1. Log ind på GitHub
+
+```bash
+gh auth login
+```
+
+#### 2. Klon et GitHub-repository
+
+```bash
+gh repo clone ejer/repo-navn
+```
+
+#### 3. Opret en pull request
+
+```bash
+gh pr create --title "Titel" --body "Beskrivelse"
+```
+
+#### 4. Vis åbne issues
+
+```bash
+gh issue list
+```
+
+#### 5. Vis status på CI/CD workflows
+
+```bash
+gh run list
+```
+
+---
+
+## git – Versionsstyringssystem
+
+```bash
+git status
+```
+
+### git – Top 5 mest brugte options
+
+#### 1. Initialiser nyt repository
+
+```bash
+git init
+```
+
+#### 2. Tilføj filer til staging
+
+```bash
+git add .
+```
+
+#### 3. Commit med besked
+
+```bash
+git commit -m "Commit-besked"
+```
+
+#### 4. Push til remote repository
+
+```bash
+git push origin main
+```
+
+#### 5. Klon et eksisterende repository
+
+```bash
+git clone https://github.com/ejer/repo.git
+```
+
+---
+
+## gpg – Krypter og signer filer med GNU Privacy Guard
+
+```bash
+gpg --encrypt fil.txt
+```
+
+### gpg – Top 5 mest brugte options
+
+#### 1. Krypter en fil til en modtager
+
+```bash
+gpg --encrypt --recipient bruger@eksempel.dk fil.txt
+```
+
+#### 2. Dekrypter en fil
+
+```bash
+gpg --decrypt fil.txt.gpg
+```
+
+#### 3. Signer en fil
+
+```bash
+gpg --sign fil.txt
+```
+
+#### 4. Vis nøgler i nøgleringe
+
+```bash
+gpg --list-keys
+```
+
+#### 5. Importer en offentlig nøgle
+
+```bash
+gpg --import nøgle.asc
+```
+
+---

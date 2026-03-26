@@ -117,3 +117,88 @@ hostname -s
 ```bash
 hostname -d
 ```
+
+---
+
+## hostnamectl – Vis og sæt systemets hostname
+
+```bash
+hostnamectl
+```
+
+### hostnamectl – Top 5 mest brugte options
+
+#### 1. Vis nuværende hostname og systeminfo
+
+```bash
+hostnamectl
+```
+
+#### 2. Sæt nyt statisk hostname
+
+```bash
+hostnamectl set-hostname nyt-hostname
+```
+
+#### 3. Sæt pretty hostname (med specialtegn)
+
+```bash
+hostnamectl set-hostname "Mit System" --pretty
+```
+
+#### 4. Vis kun hostname
+
+```bash
+hostnamectl --static
+```
+
+#### 5. Vis operativsystem og kernel-information
+
+```bash
+hostnamectl status
+```
+
+---
+
+## htop – Interaktiv procesovervåger
+
+```bash
+htop
+```
+
+### htop – Top 5 mest brugte options
+
+#### 1. Start htop
+
+```bash
+htop
+```
+
+#### 2. Vis processer for bestemt bruger
+
+```bash
+htop -u brugernavn
+```
+
+#### 3. Sorter efter hukommelsesforbrug (inde i htop)
+
+```bash
+htop
+# Tryk F6, vælg MEM%
+```
+
+#### 4. Søg efter proces (inde i htop)
+
+```bash
+htop
+# Tryk F3 og skriv procesnavn
+```
+
+#### 5. Dræb en proces (inde i htop)
+
+```bash
+htop
+# Marker proces og tryk F9
+```
+
+---

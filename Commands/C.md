@@ -317,3 +317,165 @@ curl -H "Authorization: Bearer token" https://example.com/api
 ```bash
 curl -o /dev/null -s -w "%{http_code}" https://example.com
 ```
+
+---
+
+## cgps – Vis GPS-data fra gpsd i terminalen
+
+```bash
+cgps
+```
+
+### cgps – Top 5 mest brugte options
+
+#### 1. Opret forbindelse til gpsd på standard adresse
+
+```bash
+cgps
+```
+
+#### 2. Angiv gpsd-serveradresse
+
+```bash
+cgps -s localhost
+```
+
+#### 3. Vis kun rådata fra GPS
+
+```bash
+cgps -r
+```
+
+#### 4. Kør i enkel tekst-tilstand uden TUI
+
+```bash
+cgps -s
+```
+
+#### 5. Vis hjælp
+
+```bash
+cgps --help
+```
+
+---
+
+## clear – Ryd terminalskærmen
+
+```bash
+clear
+```
+
+### clear – Top 5 mest brugte options
+
+#### 1. Ryd skærmen
+
+```bash
+clear
+```
+
+#### 2. Ryd skærm og slet scrollback-buffer
+
+```bash
+clear -x
+```
+
+#### 3. Brug tastaturgenvejen i stedet
+
+```bash
+Ctrl+L
+```
+
+#### 4. Nulstil terminal fuldstændigt
+
+```bash
+reset
+```
+
+#### 5. Ryd skærm i et script
+
+```bash
+tput clear
+```
+
+---
+
+## copyq – Avanceret udklipsholder med historik
+
+```bash
+copyq
+```
+
+### copyq – Top 5 mest brugte options
+
+#### 1. Start CopyQ i baggrunden
+
+```bash
+copyq &
+```
+
+#### 2. Vis udklipsholderhistorik
+
+```bash
+copyq show
+```
+
+#### 3. Kopier tekst til udklipsholderen via kommandolinje
+
+```bash
+copyq copy "tekst der kopieres"
+```
+
+#### 4. Hent seneste element fra udklipsholderen
+
+```bash
+copyq clipboard
+```
+
+#### 5. Ryd udklipsholderhistorik
+
+```bash
+copyq remove 0 $(copyq count)
+```
+
+---
+
+## crontab – Administrer planlagte cron-opgaver
+
+```bash
+crontab -e
+```
+
+### crontab – Top 5 mest brugte options
+
+#### 1. Rediger cron-job for nuværende bruger
+
+```bash
+crontab -e
+```
+
+#### 2. List aktive cron-job
+
+```bash
+crontab -l
+```
+
+#### 3. Slet alle cron-job for nuværende bruger
+
+```bash
+crontab -r
+```
+
+#### 4. Rediger cron-job for en anden bruger
+
+```bash
+crontab -u brugernavn -e
+```
+
+#### 5. Importer cron-job fra fil
+
+```bash
+crontab cron_jobs.txt
+```
+
+---

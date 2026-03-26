@@ -197,3 +197,45 @@ type -t ls
 ```bash
 type kommando &>/dev/null && echo "Findes"
 ```
+
+---
+
+## trash-empty – Tøm papirkurven fra terminalen
+
+```bash
+trash-empty
+```
+
+### trash-empty – Top 5 mest brugte options
+
+#### 1. Tøm papirkurven
+
+```bash
+trash-empty
+```
+
+#### 2. Slet filer ældre end X dage fra papirkurven
+
+```bash
+trash-empty 30
+```
+
+#### 3. Vis hvad der ligger i papirkurven
+
+```bash
+trash-list
+```
+
+#### 4. Flyt fil til papirkurven i stedet for rm
+
+```bash
+trash-put filnavn.txt
+```
+
+#### 5. Gendan fil fra papirkurven
+
+```bash
+trash-restore
+```
+
+---

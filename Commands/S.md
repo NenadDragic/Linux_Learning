@@ -397,3 +397,285 @@ tar -xzvf arkiv.tar.gz -C /destination/
 ```bash
 tar -cjvf arkiv.tar.bz2 mappe/
 ```
+
+---
+
+## service – Administrer systemtjenester (SysV-stil)
+
+```bash
+service tjenestenavn start
+```
+
+### service – Top 5 mest brugte options
+
+#### 1. Start en tjeneste
+
+```bash
+service nginx start
+```
+
+#### 2. Stop en tjeneste
+
+```bash
+service nginx stop
+```
+
+#### 3. Genstart en tjeneste
+
+```bash
+service nginx restart
+```
+
+#### 4. Vis status for en tjeneste
+
+```bash
+service nginx status
+```
+
+#### 5. List alle tjenester
+
+```bash
+service --status-all
+```
+
+---
+
+## sh – Kør kommandoer med POSIX-shell
+
+```bash
+sh script.sh
+```
+
+### sh – Top 5 mest brugte options
+
+#### 1. Kør et shell-script
+
+```bash
+sh script.sh
+```
+
+#### 2. Kør med debugging
+
+```bash
+sh -x script.sh
+```
+
+#### 3. Kør kode direkte fra streng
+
+```bash
+sh -c "echo Hej verden"
+```
+
+#### 4. Afslut ved første fejl
+
+```bash
+sh -e script.sh
+```
+
+#### 5. Start interaktiv sh-shell
+
+```bash
+sh
+```
+
+---
+
+## shutdown – Luk systemet ned eller genstart
+
+```bash
+shutdown now
+```
+
+### shutdown – Top 5 mest brugte options
+
+#### 1. Luk ned med det samme
+
+```bash
+shutdown now
+```
+
+#### 2. Genstart systemet
+
+```bash
+shutdown -r now
+```
+
+#### 3. Planlæg nedlukning om X minutter
+
+```bash
+shutdown +10
+```
+
+#### 4. Annuller planlagt nedlukning
+
+```bash
+shutdown -c
+```
+
+#### 5. Send besked til brugere inden nedlukning
+
+```bash
+shutdown +5 "Systemet lukker ned om 5 minutter"
+```
+
+---
+
+## source – Kør kommandoer fra en fil i nuværende shell
+
+```bash
+source fil.sh
+```
+
+### source – Top 5 mest brugte options
+
+#### 1. Indlæs miljøvariabler fra en fil
+
+```bash
+source ~/.bashrc
+```
+
+#### 2. Kortere notation med punktum
+
+```bash
+. ~/.bashrc
+```
+
+#### 3. Aktiver et virtuelt Python-miljø
+
+```bash
+source venv/bin/activate
+```
+
+#### 4. Indlæs funktioner fra ekstern fil
+
+```bash
+source funktioner.sh
+```
+
+#### 5. Genindlæs .bash_profile
+
+```bash
+source ~/.bash_profile
+```
+
+---
+
+## ss – Vis socket-statistik og netværksforbindelser
+
+```bash
+ss
+```
+
+### ss – Top 5 mest brugte options
+
+#### 1. Vis alle lyttende TCP-porte
+
+```bash
+ss -tlnp
+```
+
+#### 2. Vis alle aktive forbindelser
+
+```bash
+ss -a
+```
+
+#### 3. Vis UDP-sockets
+
+```bash
+ss -u
+```
+
+#### 4. Vis forbindelser med procesnavn og PID
+
+```bash
+ss -p
+```
+
+#### 5. Vis forbindelser til bestemt port
+
+```bash
+ss -tnp dst :443
+```
+
+---
+
+## ssh-keygen – Generer SSH-nøglepar
+
+```bash
+ssh-keygen
+```
+
+### ssh-keygen – Top 5 mest brugte options
+
+#### 1. Generer standard RSA-nøgle
+
+```bash
+ssh-keygen -t rsa -b 4096
+```
+
+#### 2. Generer ED25519-nøgle (anbefalet)
+
+```bash
+ssh-keygen -t ed25519
+```
+
+#### 3. Angiv filnavn til nøglen
+
+```bash
+ssh-keygen -t ed25519 -f ~/.ssh/min_nøgle
+```
+
+#### 4. Vis fingeraftryk af nøgle
+
+```bash
+ssh-keygen -lf ~/.ssh/id_ed25519.pub
+```
+
+#### 5. Kopiér offentlig nøgle til server
+
+```bash
+ssh-copy-id -i ~/.ssh/id_ed25519.pub bruger@server
+```
+
+---
+
+## systemctl – Administrer systemd-tjenester og -enheder
+
+```bash
+systemctl status tjenestenavn
+```
+
+### systemctl – Top 5 mest brugte options
+
+#### 1. Start en tjeneste
+
+```bash
+systemctl start nginx
+```
+
+#### 2. Aktiver tjeneste ved opstart
+
+```bash
+systemctl enable nginx
+```
+
+#### 3. Vis status for en tjeneste
+
+```bash
+systemctl status nginx
+```
+
+#### 4. Stop en tjeneste
+
+```bash
+systemctl stop nginx
+```
+
+#### 5. Genindlæs systemd-konfiguration
+
+```bash
+systemctl daemon-reload
+```
+
+---

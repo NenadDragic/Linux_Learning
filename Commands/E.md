@@ -157,3 +157,85 @@ for i in 1 2 3; do eval "var$i=$i"; done
 ```bash
 eval 'echo $HOME'
 ```
+
+---
+
+## eject – Skub medie ud af drev
+
+```bash
+eject
+```
+
+### eject – Top 5 mest brugte options
+
+#### 1. Skub standard CD/DVD-drev ud
+
+```bash
+eject
+```
+
+#### 2. Skub bestemt drev ud
+
+```bash
+eject /dev/cdrom
+```
+
+#### 3. Luk drevet igen
+
+```bash
+eject -t
+```
+
+#### 4. Skub USB-medie ud
+
+```bash
+eject /dev/sdb
+```
+
+#### 5. Vis hjælp
+
+```bash
+eject --help
+```
+
+---
+
+## exit – Afslut den aktuelle shell-session
+
+```bash
+exit
+```
+
+### exit – Top 5 mest brugte options
+
+#### 1. Afslut med statuskode 0 (succes)
+
+```bash
+exit 0
+```
+
+#### 2. Afslut med fejlkode
+
+```bash
+exit 1
+```
+
+#### 3. Afslut SSH-session
+
+```bash
+exit
+```
+
+#### 4. Afslut undershell i script
+
+```bash
+(exit 0)
+```
+
+#### 5. Brug i script for at stoppe ved fejl
+
+```bash
+kommando || exit 1
+```
+
+---

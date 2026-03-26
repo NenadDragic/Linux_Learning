@@ -197,3 +197,85 @@ du -h mappe/ | sort -h
 ```bash
 du -h --max-depth=1 mappe/
 ```
+
+---
+
+## dmesg – Vis kernel ring-buffer beskeder
+
+```bash
+dmesg
+```
+
+### dmesg – Top 5 mest brugte options
+
+#### 1. Vis menneskevenlige tidsstempler
+
+```bash
+dmesg -T
+```
+
+#### 2. Følg nye kernel-beskeder i realtid
+
+```bash
+dmesg -w
+```
+
+#### 3. Filtrer efter type (fx fejl)
+
+```bash
+dmesg --level=err
+```
+
+#### 4. Ryd kernel ring-buffer
+
+```bash
+dmesg -C
+```
+
+#### 5. Søg efter bestemt tekst
+
+```bash
+dmesg | grep usb
+```
+
+---
+
+## doublecmd – Start Double Commander filhåndtering
+
+```bash
+doublecmd
+```
+
+### doublecmd – Top 5 mest brugte options
+
+#### 1. Start Double Commander
+
+```bash
+doublecmd
+```
+
+#### 2. Start med bestemt mappe i venstre panel
+
+```bash
+doublecmd /sti/til/mappe
+```
+
+#### 3. Start i baggrunden
+
+```bash
+doublecmd &
+```
+
+#### 4. Vis versionsinfo
+
+```bash
+doublecmd --version
+```
+
+#### 5. Vis hjælp
+
+```bash
+doublecmd --help
+```
+
+---
