@@ -216,6 +216,12 @@ du -h --max-depth=1 /var | sort -rh | head -10
 du -ah /home/nenad | sort -rh | head -20
 ```
 
+#### 9. Vis størrelse på nuværende mappe
+
+```bash
+du -sh .
+```
+
 ### du – Flag-oversigt
 
 | Flag | Betydning |
