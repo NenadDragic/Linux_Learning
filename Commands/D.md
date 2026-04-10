@@ -198,6 +198,33 @@ du -h mappe/ | sort -h
 du -h --max-depth=1 mappe/
 ```
 
+#### 6. Sorteret oversigt (største øverst)
+
+```bash
+du -h --max-depth=1 | sort -rh
+```
+
+#### 7. Top 10 største mapper i en specifik mappe
+
+```bash
+du -h --max-depth=1 /var | sort -rh | head -10
+```
+
+#### 8. Rekursivt sorteret — top 20 største filer og mapper
+
+```bash
+du -ah /home/nenad | sort -rh | head -20
+```
+
+### du – Flag-oversigt
+
+| Flag | Betydning |
+|------|-----------|
+| `-h` | Human-readable (KB, MB, GB) |
+| `-s` | Summary — kun total |
+| `-a` | Alle filer, ikke kun mapper |
+| `--max-depth=N` | Maks N niveauer ned |
+
 ---
 
 ## dmesg – Vis kernel ring-buffer beskeder
