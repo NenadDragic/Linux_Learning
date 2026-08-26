@@ -160,6 +160,86 @@ for i in $(seq 1 5); do echo $i; done
 
 ---
 
+## snap – Installer og administrer snap-pakker
+
+```bash
+sudo snap install pakkenavn
+```
+
+### snap – Top 5 mest brugte options
+
+#### 1. Installer en pakke
+
+```bash
+sudo snap install pakkenavn
+```
+
+#### 2. List installerede snaps
+
+```bash
+snap list
+```
+
+#### 3. Opdater alle snaps
+
+```bash
+sudo snap refresh
+```
+
+#### 4. Fjern en snap
+
+```bash
+sudo snap remove pakkenavn
+```
+
+#### 5. Vis info om en snap
+
+```bash
+snap info pakkenavn
+```
+
+---
+
+## sort – Sorter linjer i tekstfiler
+
+```bash
+sort fil.txt
+```
+
+### sort – Top 5 mest brugte options
+
+#### 1. Sorter numerisk
+
+```bash
+sort -n fil.txt
+```
+
+#### 2. Sorter i omvendt rækkefølge
+
+```bash
+sort -r fil.txt
+```
+
+#### 3. Sorter og fjern dubletter
+
+```bash
+sort -u fil.txt
+```
+
+#### 4. Sorter efter bestemt kolonne
+
+```bash
+sort -k2 fil.txt
+```
+
+#### 5. Sorter menneskevenlige størrelser (fx fra du -h)
+
+```bash
+du -h | sort -rh
+```
+
+---
+
 ## ssh – Secure shell
 
 ```bash

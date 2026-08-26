@@ -42,6 +42,46 @@ vd data.csv
 
 ---
 
+## vim – Avanceret modal tekst-editor
+
+```bash
+vim filnavn.txt
+```
+
+### vim – Top 5 mest brugte options
+
+#### 1. Åbn fil ved bestemt linje
+
+```bash
+vim +42 filnavn.txt
+```
+
+#### 2. Gem og afslut (inde i vim)
+
+```bash
+:wq
+```
+
+#### 3. Afslut uden at gemme
+
+```bash
+:q!
+```
+
+#### 4. Søg i fil (inde i vim)
+
+```bash
+/søgeord
+```
+
+#### 5. Erstat tekst i hele filen (inde i vim)
+
+```bash
+:%s/gammelt/nyt/g
+```
+
+---
+
 ## vnstat – Netværkstrafikstatistik
 
 ```bash

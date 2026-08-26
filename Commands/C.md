@@ -80,6 +80,46 @@ cat > nyfil.txt
 
 ---
 
+## cd – Change directory
+
+```bash
+cd mappe
+```
+
+### cd – Top 5 mest brugte options
+
+#### 1. Gå til hjemmemappe
+
+```bash
+cd
+```
+
+#### 2. Gå til forældremappe
+
+```bash
+cd ..
+```
+
+#### 3. Gå til forrige mappe
+
+```bash
+cd -
+```
+
+#### 4. Gå til root-mappe
+
+```bash
+cd /
+```
+
+#### 5. Gå til mappe med mellemrum i navnet
+
+```bash
+cd "min mappe"
+```
+
+---
+
 ## chgrp – Change group ownership
 
 ```bash

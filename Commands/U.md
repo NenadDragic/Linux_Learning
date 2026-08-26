@@ -1,5 +1,45 @@
 # U
 
+## ufw – Simpel firewall-administration (Debian/Ubuntu)
+
+```bash
+sudo ufw enable
+```
+
+### ufw – Top 5 mest brugte options
+
+#### 1. Aktiver firewallen
+
+```bash
+sudo ufw enable
+```
+
+#### 2. Bloker al indgående trafik som standard
+
+```bash
+sudo ufw default deny incoming
+```
+
+#### 3. Tillad en bestemt port
+
+```bash
+sudo ufw allow 22
+```
+
+#### 4. Vis status og regler
+
+```bash
+sudo ufw status verbose
+```
+
+#### 5. Slet en regel
+
+```bash
+sudo ufw delete allow 22
+```
+
+---
+
 ## ulimit – Limit user resources
 
 ```bash
@@ -156,6 +196,46 @@ unlink filnavn.txt && echo "Slettet"
 
 ```bash
 unlink --help
+```
+
+---
+
+## usbguard – Whitelist/blacklist USB-enheder
+
+```bash
+sudo usbguard generate-policy > /etc/usbguard/rules.conf
+```
+
+### usbguard – Top 5 mest brugte options
+
+#### 1. Generer policy ud fra tilsluttede enheder og aktiver
+
+```bash
+sudo usbguard generate-policy > /etc/usbguard/rules.conf && sudo systemctl enable --now usbguard
+```
+
+#### 2. Vis status
+
+```bash
+sudo systemctl status usbguard
+```
+
+#### 3. List godkendte enheder
+
+```bash
+sudo usbguard list-devices
+```
+
+#### 4. Tillad en enhed manuelt
+
+```bash
+sudo usbguard allow-device <id>
+```
+
+#### 5. Bloker en enhed manuelt
+
+```bash
+sudo usbguard block-device <id>
 ```
 
 ---

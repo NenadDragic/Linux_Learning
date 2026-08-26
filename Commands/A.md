@@ -80,6 +80,46 @@ adduser --shell /bin/bash brugernavn
 
 ---
 
+## apt – Moderne pakkehåndtering til Debian/Ubuntu
+
+```bash
+apt install pakkenavn
+```
+
+### apt – Top 5 mest brugte options
+
+#### 1. Opdater pakkelisten
+
+```bash
+sudo apt update
+```
+
+#### 2. Opgrader alle installerede pakker
+
+```bash
+sudo apt upgrade -y
+```
+
+#### 3. Installer en pakke
+
+```bash
+sudo apt install pakkenavn
+```
+
+#### 4. Fjern ubrugte afhængigheder
+
+```bash
+sudo apt autoremove -y
+```
+
+#### 5. Søg efter en pakke
+
+```bash
+apt search pakkenavn
+```
+
+---
+
 ## apt-get – Pakkehåndtering til Debian/Ubuntu
 
 ```bash
@@ -116,6 +156,46 @@ apt-get remove pakkenavn
 
 ```bash
 apt-get purge pakkenavn
+```
+
+---
+
+## auditd – Log sikkerhedsrelaterede kernel- og brugerspace-hændelser
+
+```bash
+sudo systemctl enable --now auditd
+```
+
+### auditd – Top 5 mest brugte options
+
+#### 1. Installer og aktiver auditd
+
+```bash
+sudo apt install auditd -y && sudo systemctl enable --now auditd
+```
+
+#### 2. Vis status
+
+```bash
+sudo systemctl status auditd
+```
+
+#### 3. Søg i audit-loggen
+
+```bash
+sudo ausearch -m avc
+```
+
+#### 4. Opret regel der overvåger en fil
+
+```bash
+sudo auditctl -w /etc/passwd -p wa -k passwd_changes
+```
+
+#### 5. Vis opsummering af audit-regler
+
+```bash
+sudo auditctl -l
 ```
 
 ---

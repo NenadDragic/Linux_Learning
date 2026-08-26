@@ -160,6 +160,86 @@ dig example.com ANY
 
 ---
 
+## dnf – Pakkehåndtering til Fedora/RHEL
+
+```bash
+dnf install pakkenavn
+```
+
+### dnf – Top 5 mest brugte options
+
+#### 1. Opdater pakkelisten og systemet
+
+```bash
+sudo dnf update -y
+```
+
+#### 2. Installer en pakke
+
+```bash
+sudo dnf install pakkenavn
+```
+
+#### 3. Fjern en pakke
+
+```bash
+sudo dnf remove pakkenavn
+```
+
+#### 4. Fjern ubrugte afhængigheder
+
+```bash
+sudo dnf autoremove -y
+```
+
+#### 5. Søg efter en pakke
+
+```bash
+dnf search pakkenavn
+```
+
+---
+
+## dpkg – Lavniveau pakkehåndtering til Debian/Ubuntu
+
+```bash
+sudo dpkg -i pakke.deb
+```
+
+### dpkg – Top 5 mest brugte options
+
+#### 1. Installer en .deb-pakke
+
+```bash
+sudo dpkg -i pakke.deb
+```
+
+#### 2. List installerede pakker
+
+```bash
+dpkg -l
+```
+
+#### 3. Søg efter en installeret pakke
+
+```bash
+dpkg -l | grep pakkenavn
+```
+
+#### 4. Vis hvilken pakke en fil tilhører
+
+```bash
+dpkg -S /sti/til/fil
+```
+
+#### 5. Fjern en pakke
+
+```bash
+sudo dpkg -r pakkenavn
+```
+
+---
+
 ## du – Count and display file and directory total sizes
 
 ```bash

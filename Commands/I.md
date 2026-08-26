@@ -199,3 +199,43 @@ ip route | grep default
 ```
 
 ---
+
+## iptables – Konfigurer kernelens netfilter-firewallregler
+
+```bash
+sudo iptables -L
+```
+
+### iptables – Top 5 mest brugte options
+
+#### 1. Vis alle regler med numre
+
+```bash
+sudo iptables -L -n --line-numbers
+```
+
+#### 2. Bloker al indgående trafik som standard
+
+```bash
+sudo iptables -P INPUT DROP
+```
+
+#### 3. Tillad indgående SSH
+
+```bash
+sudo iptables -A INPUT -p tcp --dport 22 -j ACCEPT
+```
+
+#### 4. Slet en regel efter nummer
+
+```bash
+sudo iptables -D INPUT 3
+```
+
+#### 5. Gem reglerne permanent
+
+```bash
+sudo iptables-save > /etc/iptables/rules.v4
+```
+
+---

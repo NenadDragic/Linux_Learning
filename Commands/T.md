@@ -160,6 +160,46 @@ touch -r reference.txt filnavn.txt
 
 ---
 
+## traceroute – Spor routen pakker tager til en vært
+
+```bash
+traceroute example.com
+```
+
+### traceroute – Top 5 mest brugte options
+
+#### 1. Spor route til domæne
+
+```bash
+traceroute example.com
+```
+
+#### 2. Brug ICMP i stedet for UDP
+
+```bash
+traceroute -I example.com
+```
+
+#### 3. Undgå DNS-opslag (hurtigere)
+
+```bash
+traceroute -n example.com
+```
+
+#### 4. Sæt maks antal hops
+
+```bash
+traceroute -m 15 example.com
+```
+
+#### 5. Angiv pakkestørrelse
+
+```bash
+traceroute example.com 60
+```
+
+---
+
 ## type – Describe a command
 
 ```bash

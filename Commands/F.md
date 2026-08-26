@@ -121,6 +121,46 @@ file -z arkiv.gz
 
 ---
 
+## firewall-cmd – Administrer firewalld (RHEL/Arch)
+
+```bash
+firewall-cmd --state
+```
+
+### firewall-cmd – Top 5 mest brugte options
+
+#### 1. Vis aktive zoner
+
+```bash
+firewall-cmd --get-active-zones
+```
+
+#### 2. Åbn en port permanent
+
+```bash
+sudo firewall-cmd --permanent --add-port=22/tcp
+```
+
+#### 3. Genindlæs konfiguration
+
+```bash
+sudo firewall-cmd --reload
+```
+
+#### 4. Sæt standard-zone til at blokere indgående
+
+```bash
+sudo firewall-cmd --set-default-zone=drop
+```
+
+#### 5. Vis alle regler i en zone
+
+```bash
+firewall-cmd --zone=public --list-all
+```
+
+---
+
 ## fr24feed – FlightRadar24 datafeed til ADS-B
 
 ```bash
@@ -157,6 +197,46 @@ sudo systemctl status fr24feed
 
 ```bash
 sudo journalctl -u fr24feed -f
+```
+
+---
+
+## free – Vis hukommelses- og swapforbrug
+
+```bash
+free -h
+```
+
+### free – Top 5 mest brugte options
+
+#### 1. Vis i læsbart format (KB/MB/GB)
+
+```bash
+free -h
+```
+
+#### 2. Vis i megabytes
+
+```bash
+free -m
+```
+
+#### 3. Opdater løbende hvert 2. sekund
+
+```bash
+free -s 2
+```
+
+#### 4. Vis total inkl. buffere/cache
+
+```bash
+free -t
+```
+
+#### 5. Vis i wide format med separat buffer/cache-kolonne
+
+```bash
+free -w
 ```
 
 ---

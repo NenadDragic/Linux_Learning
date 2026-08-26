@@ -1,5 +1,45 @@
 # W
 
+## w – Vis hvem der er logget på systemet og hvad de laver
+
+```bash
+w
+```
+
+### w – Top 5 mest brugte options
+
+#### 1. Vis alle indloggede brugere
+
+```bash
+w
+```
+
+#### 2. Vis uden overskriftslinje
+
+```bash
+w -h
+```
+
+#### 3. Vis kort format (uden login-tid/JCPU/PCPU)
+
+```bash
+w -s
+```
+
+#### 4. Vis kun for en specifik bruger
+
+```bash
+w brugernavn
+```
+
+#### 5. Vis IP-adresse i stedet for hostname
+
+```bash
+w -f
+```
+
+---
+
 ## wc
 
 ```bash
@@ -120,6 +160,86 @@ wget -r -np https://example.com/
 
 ---
 
+## whatis – Vis kort en-linjes beskrivelse af en kommando
+
+```bash
+whatis kommando
+```
+
+### whatis – Top 5 mest brugte options
+
+#### 1. Vis beskrivelse af en kommando
+
+```bash
+whatis ls
+```
+
+#### 2. Vis beskrivelser for flere kommandoer
+
+```bash
+whatis ls cd grep
+```
+
+#### 3. Opdater whatis-databasen
+
+```bash
+sudo mandb
+```
+
+#### 4. Kombiner med apropos for bredere søgning
+
+```bash
+apropos kopier
+```
+
+#### 5. Vis alle betydninger (flere manual-sektioner)
+
+```bash
+whatis -a printf
+```
+
+---
+
+## whereis – Find binary, kildekode og manual-filer for en kommando
+
+```bash
+whereis kommando
+```
+
+### whereis – Top 5 mest brugte options
+
+#### 1. Find alle placeringer for en kommando
+
+```bash
+whereis bash
+```
+
+#### 2. Vis kun binary-filen
+
+```bash
+whereis -b bash
+```
+
+#### 3. Vis kun manual-siden
+
+```bash
+whereis -m bash
+```
+
+#### 4. Vis kun kildekode
+
+```bash
+whereis -s bash
+```
+
+#### 5. Søg i alternative stier
+
+```bash
+whereis -u bash
+```
+
+---
+
 ## which – Find stien til en kommando
 
 ```bash
@@ -156,6 +276,86 @@ which bash sh dash
 
 ```bash
 if ! which docker > /dev/null; then echo "Docker ikke fundet"; fi
+```
+
+---
+
+## whoami – Vis nuværende brugernavn
+
+```bash
+whoami
+```
+
+### whoami – Top 5 mest brugte options
+
+#### 1. Vis nuværende bruger
+
+```bash
+whoami
+```
+
+#### 2. Vis bruger-id og gruppe-id (relateret kommando)
+
+```bash
+id
+```
+
+#### 3. Vis effektiv bruger via sudo
+
+```bash
+sudo whoami
+```
+
+#### 4. Brug i script til betinget logik
+
+```bash
+if [ "$(whoami)" = "root" ]; then echo "Kører som root"; fi
+```
+
+#### 5. Vis hjælp
+
+```bash
+whoami --help
+```
+
+---
+
+## whois – Slå ejer- og registreringsoplysninger op for et domæne
+
+```bash
+whois example.com
+```
+
+### whois – Top 5 mest brugte options
+
+#### 1. Slå domæne op
+
+```bash
+whois example.com
+```
+
+#### 2. Slå IP-adresse op
+
+```bash
+whois 8.8.8.8
+```
+
+#### 3. Angiv specifik whois-server
+
+```bash
+whois -h whois.verisign-grs.com example.com
+```
+
+#### 4. Vis rå output uden lokal formattering
+
+```bash
+whois -H example.com
+```
+
+#### 5. Slå flere domæner op i træk
+
+```bash
+for d in example.com example.org; do whois $d; done
 ```
 
 ---

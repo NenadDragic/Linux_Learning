@@ -320,3 +320,43 @@ lsof -p 1234
 ```
 
 ---
+
+## lynis – Sikkerhedsaudit og hardening-anbefalinger
+
+```bash
+sudo lynis audit system
+```
+
+### lynis – Top 5 mest brugte options
+
+#### 1. Kør fuld systemaudit
+
+```bash
+sudo lynis audit system
+```
+
+#### 2. Vis kun advarsler (hurtig kørsel)
+
+```bash
+sudo lynis audit system --quick
+```
+
+#### 3. Vis tilgængelige tests
+
+```bash
+lynis show tests
+```
+
+#### 4. Vis detaljeret log
+
+```bash
+cat /var/log/lynis.log
+```
+
+#### 5. Vis hardening-indeks efter kørsel
+
+```bash
+cat /var/log/lynis-report.dat | grep hardening_index
+```
+
+---

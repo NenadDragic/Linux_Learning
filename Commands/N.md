@@ -41,6 +41,46 @@ Ctrl+W  # Søg
 
 ---
 
+## neofetch – Vis systeminfo-oversigt i terminalen
+
+```bash
+neofetch
+```
+
+### neofetch – Top 5 mest brugte options
+
+#### 1. Vis standard systeminfo med logo
+
+```bash
+neofetch
+```
+
+#### 2. Kør uden ASCII-logo
+
+```bash
+neofetch --off
+```
+
+#### 3. Brug bestemt distro-logo
+
+```bash
+neofetch --ascii_distro ubuntu
+```
+
+#### 4. Vis kun bestemte felter
+
+```bash
+neofetch --disable gpu resolution
+```
+
+#### 5. Eksporter output til fil
+
+```bash
+neofetch --stdout > systeminfo.txt
+```
+
+---
+
 ## netstat – Network utility for reading and writing data
 
 ```bash

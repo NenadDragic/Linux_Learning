@@ -40,6 +40,46 @@ read fornavn efternavn
 
 ---
 
+## reboot – Genstart systemet
+
+```bash
+sudo reboot
+```
+
+### reboot – Top 5 mest brugte options
+
+#### 1. Genstart med det samme
+
+```bash
+sudo reboot
+```
+
+#### 2. Genstart via systemctl
+
+```bash
+sudo systemctl reboot
+```
+
+#### 3. Planlæg genstart om X minutter
+
+```bash
+sudo shutdown -r +10
+```
+
+#### 4. Tving genstart (ved hængende system)
+
+```bash
+sudo reboot -f
+```
+
+#### 5. Annuller planlagt genstart
+
+```bash
+sudo shutdown -c
+```
+
+---
+
 ## rm – Remove files
 
 ```bash

@@ -1,5 +1,45 @@
 # P
 
+## pacman – Pakkehåndtering til Arch Linux
+
+```bash
+sudo pacman -S pakkenavn
+```
+
+### pacman – Top 5 mest brugte options
+
+#### 1. Opdater hele systemet
+
+```bash
+sudo pacman -Syu
+```
+
+#### 2. Installer en pakke
+
+```bash
+sudo pacman -S pakkenavn
+```
+
+#### 3. Fjern en pakke
+
+```bash
+sudo pacman -R pakkenavn
+```
+
+#### 4. Fjern forældreløse pakker
+
+```bash
+sudo pacman -Rns $(pacman -Qdtq)
+```
+
+#### 5. Søg efter en pakke
+
+```bash
+pacman -Ss pakkenavn
+```
+
+---
+
 ## passwd – Update user password
 
 ```bash
@@ -76,6 +116,46 @@ paste fil1.txt fil2.txt
 
 ```bash
 ls | paste - - -
+```
+
+---
+
+## pkill – Terminer processer efter navn
+
+```bash
+pkill procesnavn
+```
+
+### pkill – Top 5 mest brugte options
+
+#### 1. Dræb alle processer med bestemt navn
+
+```bash
+pkill firefox
+```
+
+#### 2. Send bestemt signal
+
+```bash
+pkill -9 procesnavn
+```
+
+#### 3. Dræb processer for en bestemt bruger
+
+```bash
+pkill -u brugernavn
+```
+
+#### 4. Match på fuld kommandolinje
+
+```bash
+pkill -f "python script.py"
+```
+
+#### 5. Vis hvad der ville blive dræbt (dry-run via pgrep)
+
+```bash
+pgrep -a procesnavn
 ```
 
 ---
