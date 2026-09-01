@@ -200,6 +200,22 @@ Navngivningskonventionen er typisk `navn.log`, `navn.log.1` (nyeste roterede, uk
 
 ---
 
+## 12. Tøm en logfil uden at slette den
+
+```bash
+: > fil.txt
+```
+
+`:` er en indbygget no-op kommando (returnerer altid succes uden output). Ved at omdirigere dens (tomme) output til filen med `>` bliver filen straks trunkeret til 0 bytes.
+
+Bruges typisk til at tømme store logfiler, fx `: > /var/log/syslog`, uden at slette selve filen — hvilket er vigtigt hvis en anden proces (fx en dæmon) allerede har filen åben via en filhandle. Sletter man filen (`rm`) og opretter en ny, skriver processen stadig til den gamle (nu usynlige) fil, indtil den genstartes. Alternativer med samme effekt: `> fil.txt` eller `truncate -s 0 fil.txt`.
+
+```bash
+: > /var/log/syslog
+```
+
+---
+
 ## Se også
 
 [D.md](D.md) for `dmesg`, [J.md](J.md) for `journalctl`, [T.md](T.md) for `tail`, [G.md](G.md) for `grep`/`zgrep`, [A.md](A.md) for `awk`/`ausearch`/`aureport`, [L.md](L.md) for `last`/`lastb`/`lastlog`/`logrotate`, [S.md](S.md) for `systemctl`/`systemd-analyze`, [Security_Hardening.md](Security_Hardening.md) for opsætning af `auditd`.
