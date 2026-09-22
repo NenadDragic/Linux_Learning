@@ -40,6 +40,46 @@ w -f
 
 ---
 
+## watch – Kør en kommando gentagne gange og vis output i realtid
+
+```bash
+watch -n 60 df -h /dev/sdb1
+```
+
+### watch – Top 5 mest brugte options
+
+#### 1. Overvåg diskforbrug hvert 60. sekund
+
+```bash
+watch -n 60 df -h /dev/sdb1
+```
+
+#### 2. Fremhæv hvad der ændrer sig mellem opdateringer
+
+```bash
+watch -d -n 5 df -h /dev/sdb1
+```
+
+#### 3. Skjul overskriften med interval/kommando/tidspunkt
+
+```bash
+watch -t -n 5 date
+```
+
+#### 4. Stop automatisk så snart outputtet ændrer sig
+
+```bash
+watch -g -n 5 df -h /dev/sdb1
+```
+
+#### 5. Vis farvet output korrekt (ANSI-koder)
+
+```bash
+watch -c -n 2 'ls --color=always -la'
+```
+
+---
+
 ## wc
 
 ```bash
